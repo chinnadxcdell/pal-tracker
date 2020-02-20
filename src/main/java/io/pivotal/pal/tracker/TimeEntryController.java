@@ -22,7 +22,6 @@ public class TimeEntryController {
             MeterRegistry meterRegistry
     ) {
         this.timeEntriesRepo = timeEntriesRepo;
-
         timeEntrySummary = meterRegistry.summary("timeEntry.summary");
         actionCounter = meterRegistry.counter("timeEntry.actionCounter");
     }
