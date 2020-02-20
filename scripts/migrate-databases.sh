@@ -32,6 +32,14 @@ function main() {
 
     echo "Waiting for tunnel ..."
 
+    echo $db_host
+    echo $app_name
+    echo $db_port
+    echo $db_name
+    echo $db_username
+    echo $db_password
+
+
     wait_for_tunnel
 
     echo "Running migration ..."
